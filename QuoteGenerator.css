@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Playfair Display", serif;
+    background-color:#bbc6fa;
+} 
+.quote-box{
+    width: 700px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 15%);
+}
+.quote-box h2{
+    margin-bottom: 30px;
+    position: relative;
+}
+.quote-box h2::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    background-color: rgb(5, 164, 212);
+    bottom: -5px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.quote-box blockquote{
+    margin-bottom: 30px;
+}
+.quote-box span{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+.quote-box span::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(5, 164, 212);
+    left: -15px;
+    top: 50%;
+    transform: translate(-50%, 50%);
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+div .quote{
+    font-family: "Playfair Display", serif;
+    background-color: rgb(5, 95, 212);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+div .twitter{
+    display: flex;
+    align-items:center;
+    font-family: "Playfair Display", serif;
+    background-color: transparent;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #ddd;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+div .twitter img{
+    width: 19px;
+    height: 19px;
+}
